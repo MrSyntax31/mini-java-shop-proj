@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.0.final using JasperReports Library version 6.12.1-ac0eebdb29e4c0985457bab279a6db744d661530  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="invoice" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b69a3979-6c75-427f-bd59-40e26eeb77f6">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="20" width="230" height="50" uuid="3ed1ed91-0996-4990-b732-28d53529708c"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Oxygn Apparel]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="10" width="150" height="61" uuid="eb064498-a54e-42c9-8c41-3193b5431628"/>
+				<imageExpression><![CDATA["C:/Users/HP/Pictures/Project Pictures/My Designs/oxygn.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="440" y="30" width="110" height="41" uuid="64a23c48-c898-4354-ba59-923bba68353d"/>
+				<text><![CDATA[Yumul St. Brgy Burgos Lopez, Quezon]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="2" y="19" width="100" height="30" uuid="309e44ce-3bd3-45b9-bae0-5befaa3c3c52"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="110" y="20" width="100" height="30" uuid="252a322f-8712-4951-a94b-49f2b4f55421"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
